@@ -160,8 +160,7 @@ The API will be available at:
 ### Method 1: Visual Studio / VS Code
 Right-click on the solution or test project and select **"Run Tests"**:
 
-![Run Tests in Visual Studio](![image](https://github.com/user-attachments/assets/19ba315a-0804-477e-88b0-d3c267054889)
-)
+![Run Tests in Visual Studio](https://github.com/user-attachments/assets/19ba315a-0804-477e-88b0-d3c267054889)
 
 *Right-click on project → Run Tests*
 
@@ -218,8 +217,7 @@ Time:   00:00:02.3456789
 #### Visual Studio Test Explorer - Detailed View
 Click on **FullQuizFlow_ShouldReturnResult** test to see detailed execution log:
 
-![Test Explorer Results](![image](https://github.com/user-attachments/assets/499d23e1-35be-45b5-8e62-540b64f8f6c4)
-)
+![Test Explorer Results](https://github.com/user-attachments/assets/499d23e1-35be-45b5-8e62-540b64f8f6c4)
 
 *Expand test details to view complete quiz flow execution*
 
