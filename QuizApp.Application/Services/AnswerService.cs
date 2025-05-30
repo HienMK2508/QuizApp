@@ -16,7 +16,6 @@ public class AnswerService : IAnswerService
 
     public async Task<bool> SubmitAnswerAsync(AnswerDto answerDto)
     {
-        // Mapping DTO to domain model
         var answer = new Answer
         {
             UserId = answerDto.UserId,

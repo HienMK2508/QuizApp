@@ -17,7 +17,6 @@ public class AnswerRepository : IAnswerRepository
 
     public async Task SaveAnswerAsync(Answer answer)
     {
-        // Map từ domain Answer sang EF entity
         var efAnswer = new Persistence.Entities.Answer
         {
             UserId = answer.UserId,
