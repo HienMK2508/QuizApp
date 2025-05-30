@@ -209,20 +209,6 @@ This comprehensive test validates the entire user journey from quiz start to res
 
 ---
 
-## 🚀 API Endpoints
-
-### Quiz Management
-- `GET /api/quiz` - Get all quizzes
-- `GET /api/quiz/{id}` - Get specific quiz
-- `POST /api/quiz` - Create new quiz
-
-### Quiz Taking
-- `POST /api/quiz/{id}/start` - Start quiz session
-- `POST /api/quiz/{id}/submit` - Submit quiz answers
-- `GET /api/result/{id}` - Get quiz results
-
----
-
 ## 🏗️ Architecture Overview
 
 ### Clean Architecture Layers
@@ -269,35 +255,14 @@ This comprehensive test validates the entire user journey from quiz start to res
 
 ## 👤 Author
 
-**Your Name**
-- GitHub: [@yourusername](https://github.com/yourusername)
-- Email: your.email@example.com
+**Hoàng Đức Hiền**
+- Email: hoangduchien2002@gmail.com
 
 ---
 
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-## 🤝 Contributing
-
-1. Fork the project
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
----
-
-## 📞 Support
-
-If you encounter any issues or have questions:
-
-1. Check the [Issues](../../issues) section
-2. Create a new issue with detailed description
-3. Include error messages and environment details
 
 ---
 
