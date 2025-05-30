@@ -157,27 +157,81 @@ The API will be available at:
 
 ## 🧪 Run Tests
 
-### Execute All Tests
+### Method 1: Visual Studio / VS Code
+Right-click on the solution or test project and select **"Run Tests"**:
+
+![Run Tests in Visual Studio](https://your-image-url/run-tests-visual-studio.png)
+
+*Right-click on project → Run Tests*
+
+### Method 2: Command Line
+
+#### Execute All Tests
 ```bash
 dotnet test
 ```
 
-### Run Specific Test Project
+#### Run Specific Test Project
 ```bash
 dotnet test QuizApp.Api.Tests
 ```
 
-### Run with Detailed Output
+#### Run with Detailed Output
 ```bash
 dotnet test --verbosity normal
 ```
 
+#### Watch Mode (Auto-run on file changes)
+```bash
+dotnet test --watch
+```
+
+### Method 3: Test Explorer
+Use the Test Explorer window in Visual Studio:
+1. **View** → **Test Explorer**
+2. Click **Run All Tests** or select specific tests
+3. View results and detailed output
+
 ### Test Coverage
 The test suite includes:
-- ✅ End-to-end API testing
-- ✅ Database integration tests
-- ✅ Complete user journey simulation
-- ✅ Response validation and error handling
+- ✅ **End-to-end API testing** - Complete request/response flow
+- ✅ **Database integration tests** - Real database operations
+- ✅ **Complete user journey simulation** - Full quiz-taking experience
+- ✅ **Response validation** - JSON structure and data validation
+- ✅ **Error handling tests** - Exception scenarios and edge cases
+
+### Sample Test Output
+
+#### Command Line Output
+```
+Test run for QuizApp.Api.Tests.dll (.NETCoreApp,Version=v8.0)
+Microsoft (R) Test Execution Command Line Tool Version 17.8.0
+
+Starting test execution, please wait...
+A total of 1 test files matched the specified pattern.
+
+Passed!  - Failed:     0, Passed:     5, Skipped:     0, Total:     5
+Time:   00:00:02.3456789
+```
+
+#### Visual Studio Test Explorer - Detailed View
+Click on **FullQuizFlow_ShouldReturnResult** test to see detailed execution log:
+
+![Test Explorer Results](https://your-image-url/test-explorer-results.png)
+
+*Expand test details to view complete quiz flow execution*
+
+**What the detailed log shows:**
+- ✅ **Step 1**: Fetching quiz questions from API
+- ✅ **Quiz Details**: "Developer Basics Quiz" with 10 questions  
+- ✅ **Q1-Q10**: Each question with answer validation
+- ✅ **Submission**: Quiz answers submitted successfully
+- ✅ **Final Result**: 
+  - **Correct**: 5 out of 10 answers
+  - **Time**: 427 seconds
+  - **Status**: ✅ **PASSED**
+
+This comprehensive test validates the entire user journey from quiz start to result display, ensuring all API endpoints work correctly together.
 
 ---
 
