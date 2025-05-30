@@ -157,40 +157,35 @@ The API will be available at:
 
 ## 🧪 Run Tests
 
-### Method 1: Visual Studio / VS Code
-Right-click on the solution or test project and select **"Run Tests"**:
+### How to Run Tests in Visual Studio
+
+1. **Open Test Explorer**
+   - Go to **View** → **Test Explorer** (or press `Ctrl+E, T`)
+
+2. **Run Tests**
+   - Right-click on the solution/project → **Run Tests**
+   - Or click **Run All Tests** in Test Explorer
 
 ![Run Tests in Visual Studio](https://github.com/user-attachments/assets/19ba315a-0804-477e-88b0-d3c267054889)
 
-*Right-click on project → Run Tests*
+3. **View Test Results and Logs**
+   - Click on **FullQuizFlow_ShouldReturnResult** test to see detailed execution log
+   - Expand test details to view complete quiz flow execution
 
-### Method 2: Command Line
+![Test Explorer Results](https://github.com/user-attachments/assets/499d23e1-35be-45b5-8e62-540b64f8f6c4)
 
-#### Execute All Tests
+### Alternative: Command Line
+
 ```bash
+# Execute all tests
 dotnet test
-```
 
-#### Run Specific Test Project
-```bash
-dotnet test QuizApp.Api.Tests
-```
-
-#### Run with Detailed Output
-```bash
+# Run with detailed output
 dotnet test --verbosity normal
-```
 
-#### Watch Mode (Auto-run on file changes)
-```bash
+# Watch mode (auto-run on file changes)
 dotnet test --watch
 ```
-
-### Method 3: Test Explorer
-Use the Test Explorer window in Visual Studio:
-1. **View** → **Test Explorer**
-2. Click **Run All Tests** or select specific tests
-3. View results and detailed output
 
 ### Test Coverage
 The test suite includes:
@@ -200,28 +195,7 @@ The test suite includes:
 - ✅ **Response validation** - JSON structure and data validation
 - ✅ **Error handling tests** - Exception scenarios and edge cases
 
-### Sample Test Output
-
-#### Command Line Output
-```
-Test run for QuizApp.Api.Tests.dll (.NETCoreApp,Version=v8.0)
-Microsoft (R) Test Execution Command Line Tool Version 17.8.0
-
-Starting test execution, please wait...
-A total of 1 test files matched the specified pattern.
-
-Passed!  - Failed:     0, Passed:     5, Skipped:     0, Total:     5
-Time:   00:00:02.3456789
-```
-
-#### Visual Studio Test Explorer - Detailed View
-Click on **FullQuizFlow_ShouldReturnResult** test to see detailed execution log:
-
-![Test Explorer Results](https://github.com/user-attachments/assets/499d23e1-35be-45b5-8e62-540b64f8f6c4)
-
-*Expand test details to view complete quiz flow execution*
-
-**What the detailed log shows:**
+### What the Test Log Shows:
 - ✅ **Step 1**: Fetching quiz questions from API
 - ✅ **Quiz Details**: "Developer Basics Quiz" with 10 questions  
 - ✅ **Q1-Q10**: Each question with answer validation
